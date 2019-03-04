@@ -1,0 +1,16 @@
+package edmt.dev.helloworld;
+
+import android.os.Bundle;
+
+import com.badlogic.gdx.backends.android.AndroidApplication;
+import com.badlogic.gdx.backends.android.AndroidApplicationConfiguration;
+import edmt.dev.helloworld.PEC;
+
+public class AndroidLauncher extends AndroidApplication {
+	@Override
+	protected void onCreate (Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		AndroidApplicationConfiguration config = new AndroidApplicationConfiguration();
+		initialize(new PEC(), config);
+	}
+}
